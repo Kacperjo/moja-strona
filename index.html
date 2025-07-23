@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background-color: #0d0d0d;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .neon-button {
+      padding: 15px 40px;
+      font-size: 20px;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      background: none;
+      border: 2px solid #0ff;
+      border-radius: 10px;
+      text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+      box-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #0ff;
+      cursor: pointer;
+      transition: 0.3s;
+      animation: pulse 2s infinite;
+    }
+
+    .neon-button:hover {
+      box-shadow: 0 0 20px #0ff, 0 0 40px #0ff, 0 0 60px #0ff;
+    }
+
+    @keyframes pulse {
+      0% {
+        box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+      }
+      50% {
+        box-shadow: 0 0 20px #0ff, 0 0 40px #0ff;
+      }
+      100% {
+        box-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+      }
+    }
+  </style>
+</head>
+<body>
+  <button class="neon-button">START</button>
+</body>
+</html>
